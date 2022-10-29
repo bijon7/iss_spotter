@@ -1,7 +1,7 @@
 // Entry point to the application with the defined callbacks.
-const { fetchMyIP } = require('./iss');
-const { fetchCoordsByIP } = require('./iss');
-const { fetchISSFlyOverTimes } = require('./iss');
+// const { fetchMyIP } = require('./iss');
+// const { fetchCoordsByIP } = require('./iss');
+// const { fetchISSFlyOverTimes } = require('./iss');
 const { nextISSTimesForMyLocation } = require('./iss');
 
 // fetchMyIP((error, ip) => {
@@ -34,6 +34,9 @@ const { nextISSTimesForMyLocation } = require('./iss');
 
 //   console.log('It worked! Returned flyover times:', passTimes);
 // });
+
+//Replace the previous three functions with a single
+//function called nextISSTimesForMyLocation.
 
 const printPassTimes = function (passTimes) {
   for (const pass of passTimes) {
